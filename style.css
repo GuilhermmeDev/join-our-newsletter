@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafb;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60vw;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.big_text {
+  font-size: clamp(1.5rem, 3rem, 3rem);
+  font-weight: 600;
+}
+
+.sub_text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #6c727f;
+}
+
+.container_box {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03),
+    0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+  gap: 1.5rem;
+  width: 80%;
+  min-width: 560px;
+  margin: 3rem;
+}
+
+#email_input {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+#email_input::placeholder {
+  font-weight: 500;
+  color: #394150;
+  font-size: 1rem;
+}
+
+#email_input,
+#sub_button {
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 8px;
+}
+
+#sub_button {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #284bce;
+  border: none;
+  font-size: 1rem;
+}
+
+.help_text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #394150;
+}
+
+@media (max-width: 640px) {
+  main {
+    width: 80vw;
+  }
+  .big_text {
+    font-size: 2rem;
+  }
+
+  .sub_text {
+    font-size: 1rem;
+  }
+}
